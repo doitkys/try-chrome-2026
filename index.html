@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 로그아웃 -->
+    <form class="hidden" id="logout-form" action="">
+      <input type="submit" value="Log out" />
+    </form>
+    <!-- 시계 -->
+    <h2 id="clock">00:00:00</h2>
+    <!-- 로그인 -->
+    <form class="hidden" id="login-form">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="what is your name"
+      />
+      <input type="submit" value="Log In" />
+    </form>
+    <!-- 환영합니다 -->
+    <h1 id="greeting" class="hidden"></h1>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+  </body>
+</html>
